@@ -6,9 +6,9 @@
 read -p "please input the present version of Python(2|3): " ver
 case $ver in
 	"2")
-		/bin/bash python2-3.sh
+		./python2-3.sh
 		;;
 	"3")
-		/bin/bash python3-2.sh
+		./python3-2.sh
 		;;
 esac
