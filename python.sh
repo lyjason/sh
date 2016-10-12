@@ -11,9 +11,8 @@ case $ver in
 		echo 'python_v2 on line'
 		;;
 	"3")
-		path=$(whereis python3|cut -d ' ' -f 2 )
 		rm -rf  /usr/bin/python
-		ln -s $path  /usr/bin/python	
+		ln -s /usr/local/python3/bin/python3  /usr/bin/python	
 		echo 'python_v3 on line'
 		;;
 esac
