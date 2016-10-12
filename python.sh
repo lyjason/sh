@@ -6,9 +6,12 @@
 read -p "please input the present version of Python(2|3): " ver
 case $ver in
 	"2")
-		./python2-3.sh
+		rm -rf /usr/bin/python
+		ln -s /usr/local/python2.7.12/bin/python2.7 /usr/bin/python	
 		;;
 	"3")
-		./python3-2.sh
+		path=$(whereis python3|cut -d ' ' -f 2 )
+		rm -rf  /usr/bin/python
+		ln -s $path  /usr/bin/python	
 		;;
 esac
