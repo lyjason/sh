@@ -12,7 +12,7 @@ case $ver in
 		;;
 	"3")
 		rm -rf  /usr/bin/python
-		ln -s /usr/local/python3/bin/python3  /usr/bin/python	
+		ln -s /usr/local/python3.5.2/bin/python3.5 /usr/bin/python	
 		echo 'python_v3 on line'
 		;;
 esac
